@@ -147,8 +147,16 @@ struct TestCases {
          return result;
       }
 
+      static std::vector<int> test_8()
+      {
+         std::vector<int> result;
+         for (size_t i = 0; i < 20; i++) result.push_back(i);
+         result.push_back(2710);
+         return result;
+      }
+
       static std::vector<std::vector<int>> all_tests()
       {
-         return {test_1(), test_2(), test_3(), test_4(), test_5(), test_6(), test_7()};
+         return {test_1(), test_2(), test_3(), test_4(), test_5(), test_6(), test_7(), test_8()};
       }
 };
