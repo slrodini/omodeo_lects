@@ -48,7 +48,6 @@ int main()
       int pos  = search<LinearSearch>(test, target);
       int pos2 = search<BinarySearch>(test, target);
       std::cout << pos << "  " << pos2 << std::endl;
-      // if (pos2 != -1) std::cout << test[pos2] << std::endl;
    }
    return 0;
 }

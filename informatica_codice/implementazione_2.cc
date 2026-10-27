@@ -14,7 +14,7 @@ int search(const std::vector<int>& input, const int target, bool binary)
    } else {
 
       int low  = 0;
-      int high = input.size();
+      int high = input.size() - 1;
       if (high - low <= 1) return input[0] == target ? 0 : -1;
 
       int mid = (high + low) / 2;
@@ -39,7 +39,6 @@ int main()
       int pos  = search(test, target, false);
       int pos2 = search(test, target, true);
       std::cout << pos << "  " << pos2 << std::endl;
-      // if (pos2 != -1) std::cout << test[pos2] << std::endl;
    }
    return 0;
 }
